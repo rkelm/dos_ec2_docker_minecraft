@@ -1,0 +1,12 @@
+v1.0 
+25.07.2017
+Added docmc_launch.bat batch file to launch ec2 instance using dos_ctrl_ec2 and run map.
+Added docmc_terminate.bat batch file to save map and terminate instance.
+Added docmc_whitelist_list.bat, _add.bat and _remove.bat to manage server whitelist.
+Added docmc_kick.bat to kick player off the server.
+Added docmc_punish.bat to warn misbehaving player.
+Added docmc_runmap.bat to 
+Added build_package.bat and build_file_list.txt to create deployment package in build/
+Added setup_shortcuts.bat to setup shortcuts for callings batches with a specific config file.
+Addded ToDo.txt to keep track of ToDo's.
+Added docmc_config_example.bat as an example config file.

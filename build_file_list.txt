@@ -1,0 +1,14 @@
+dos_ec2_docker_minecraft\changes.txt
+dos_ec2_docker_minecraft\README.md
+dos_ec2_docker_minecraft\LICENSE
+dos_ec2_docker_minecraft\config\docmc_config_example.bat
+dos_ec2_docker_minecraft\docmc_cmd.bat
+dos_ec2_docker_minecraft\docmc_kick.bat
+dos_ec2_docker_minecraft\docmc_launch.bat
+dos_ec2_docker_minecraft\docmc_punish.bat
+dos_ec2_docker_minecraft\docmc_runmap.bat
+dos_ec2_docker_minecraft\docmc_terminate.bat
+dos_ec2_docker_minecraft\docmc_whitelist_add.bat
+dos_ec2_docker_minecraft\docmc_whitelist_list.bat
+dos_ec2_docker_minecraft\docmc_whitelist_remove.bat
+setup_shortcuts.bat

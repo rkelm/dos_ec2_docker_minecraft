@@ -1,0 +1,43 @@
+* put client files to github
+	- update changes.txt
+	- readme.md with client Docs
+
+* put server files to github.
+	- add to build package
+	- add setup_server.sh
+
+* Write readme.md documentation
+	- s3 tags
+	- client/server setup_server
+
+* Copy dockerfile/build.sh from docker_bakery_1 to github repos
+	- Warning: Not to be uploaded to docker hub.
+
+* Map Management for clients
+* list_maps.sh
+	- create docmc_list_maps.sh
+		aws s3api --region %REGION% list-objects-v2 --bucket %BUCKET% --prefix %MAPS_S3_KEY%
+	- use ssm to execute on linux
+	- Show map name, size, date
+* show_map.sh <map_id> - Show details (date saved, comment tag, size in MB, app name)
+* list_map_versions.sh - Show (KEEP Tag, date saved, comment tag, size in MB, app name) 
+	- create directory map_data/files for persistent files.
+	- run scripts on aws lambda instead of local client?
+	- cp_map.sh <src_map_id><dst_map_id> [dst_comment_tag] - or copy comment? subdomain?
+	- del_map.sh <map_id> - Mark as deleted (Clean up by S3 rules)
+	- keep_map_version <map_id> <version_id>
+	- comment_map.sh <map_id> <comment>
+	- ?? snap_map.sh <map_id> [comment] - Old version gets comment
+	- keep_version.sh <map_id> <version_id> - Sets KEEP Tag = true
+	- create_map.sh <map_id> <url> - Wie genau kann eine neue Karte erstellt werden? Mit 			app-config-templates?
+	- Templates zum leichten erstellen von Maps.
+
+* Deploy a few maps for vanilla MC.
+    - create_map.bat
+		- create from templates
+		- seed as parameter? Better edited in server.properties.
+		- download and unzip 
+	- upload2s3.bat <map_id> <directory of map_data>
+		- tars map
+		- Uploads new map to s3.
+
