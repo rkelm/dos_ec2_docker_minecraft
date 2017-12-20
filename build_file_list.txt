@@ -6,7 +6,9 @@ dos_ec2_docker_minecraft\docmc_cmd.bat
 dos_ec2_docker_minecraft\docmc_kick.bat
 dos_ec2_docker_minecraft\docmc_launch.bat
 dos_ec2_docker_minecraft\docmc_punish.bat
+dos_ec2_docker_minecraft\docmc_rendermap.bat
 dos_ec2_docker_minecraft\docmc_runmap.bat
+dos_ec2_docker_minecraft\docmc_savemap.bat
 dos_ec2_docker_minecraft\docmc_terminate.bat
 dos_ec2_docker_minecraft\docmc_whitelist_add.bat
 dos_ec2_docker_minecraft\docmc_whitelist_list.bat

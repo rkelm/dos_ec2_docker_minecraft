@@ -36,16 +36,16 @@ set "_input=!_input:~1!"
 :endLoop
 
 IF NOT DEFINED _output (
-	ECHO Sie haben keinen gültigen Wert fuer das Kuerzel eingegeben.
+	ECHO Sie haben keinen gueltigen Wert fuer das Kuerzel eingegeben.
 	EXIT /B 1
 	PAUSE
 )
 
-REM ec2_mc_backup_map.bat
-REM powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%_DIR%\AWS EC2 Backup der aktuellen Karte erstellen %_output%.lnk');$s.TargetPath='%_DIR%%_BAT_DIR%\ec2_mc_backup_map.bat'; $s.Arguments='%_output%'; $s.WorkingDirectory='%_DIR%%_BAT_DIR%';$s.Save()"
+REM docmc_save_map.bat
+powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%_DIR%\AWS EC2 Karte speichern %_output%.lnk');$s.TargetPath='%_DIR%%_BAT_DIR%\docmc_savemap.bat'; $s.Arguments='%_output%'; $s.WorkingDirectory='%_DIR%%_BAT_DIR%';$s.Save()"
 
-REM ec2_mc_create_snap.bat
-REM powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%_DIR%\AWS EC2 Snapshot erstellen %_output%.lnk');$s.TargetPath='%_DIR%%_BAT_DIR%\ec2_mc_create_snap.bat'; $s.Arguments='%_output%'; $s.WorkingDirectory='%_DIR%%_BAT_DIR%'; $s.Save()"
+REM docmc_render_map.bat
+powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%_DIR%\AWS EC2 Kartenuebersicht aktualisieren %_output%.lnk');$s.TargetPath='%_DIR%%_BAT_DIR%\docmc_rendermap.bat'; $s.Arguments='%_output%'; $s.WorkingDirectory='%_DIR%%_BAT_DIR%'; $s.Save()"
 
 REM docmc_kick.bat
 powershell "$s=(New-Object -COM WScript.Shell).CreateShortcut('%_DIR%\AWS EC2 Kick Spieler vom Server %_output%.lnk');$s.TargetPath='%_DIR%%_BAT_DIR%\docmc_kick.bat'; $s.Arguments='%_output%'; $s.WorkingDirectory='%_DIR%%_BAT_DIR%'; $s.Save()"

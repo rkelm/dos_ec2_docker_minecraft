@@ -42,7 +42,7 @@ set "_input=!_input:~1!"
     goto loop
 :endLoop
 
-CALL %CTRL_PATH%ec2_send_command.bat %1 sudo -u ec2-user %SRV_INSTALL_PATH%bin/app_cmd.sh 'whitelist add %_output%' 'kick %_output%'
+CALL %CTRL_PATH%ec2_send_command.bat %1 sudo -u ec2-user %SRV_INSTALL_PATH%bin/app_cmd.sh 'whitelist add %_output%'
 
 PAUSE
 

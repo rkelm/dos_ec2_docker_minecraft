@@ -1,17 +1,48 @@
+TEST!
+  - Build
+  - setup with Links
+  - commit
+
+* dos_ctrl_ec2
+		- Find volume by tag
+		- Instantiate volume from snapshot
+			- chose snapshot by ID or Tag
+			- volume definition overrides snapshopt definition
+        - Optionally delete created volume after termination, if created by snapshot.
+	    - Optionally create snapshot before deleting volume.
+		   - Zero volume with "zerofree" before taking a snapshot.
+
+* Add batch & bash script to backup chosen map to s3 Bucket.
+	- First save map.
+	- Then copy with timestamped name to backup bucket, if configured.
+	- Add to setup_links.bat
+	- Add to build file list.
+
+* Should control files be 
+
 * put client files to github
-	- update changes.txt
 	- readme.md with client Docs
 
 * put server files to github.
 	- add to build package
-	- add setup_server.sh
+	- add setup_server.sh	
+
+* Copy dockerfile/build.sh from docker_bakery_1 to github repos
+	- Warning: Not to be uploaded to docker hub.
+	- overviewer Dockerfile build.sh
+		- Clean up before build. 
+		- Support new MC Versions.
+
+* Create vagrantfile for docker bakery. Or does a better one already exist?
+* Put vagrant file to github 
+
+* Setup cron job with reminder Mail, that server is running.
+
+* Are dos_ec2_docker_minecraft/server/* files still needed? Most likely not.
 
 * Write readme.md documentation
 	- s3 tags
 	- client/server setup_server
-
-* Copy dockerfile/build.sh from docker_bakery_1 to github repos
-	- Warning: Not to be uploaded to docker hub.
 
 * Map Management for clients
 * list_maps.sh
@@ -39,5 +70,6 @@
 		- download and unzip 
 	- upload2s3.bat <map_id> <directory of map_data>
 		- tars map
-		- Uploads new map to s3.
+		- Upload new map to s3.
 
+* Add Teamtalk docker image

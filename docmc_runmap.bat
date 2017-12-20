@@ -51,7 +51,7 @@ IF ERRORLEVEL 1 (
 )
 
 SET /P list=<map_ids.txt
-echo 1
+
 :SHOWMENU
 ECHO.
 ECHO Es stehen folgende Karten zur Auswahl:

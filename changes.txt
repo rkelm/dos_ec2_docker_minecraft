@@ -1,4 +1,14 @@
-v1.0 
+v1.1
+21.12.2017
+Features
+Added docmc_rendermap.bat to render chosen map with overviewer on aws batch.
+Marked render_map.sh on server as deprecated.
+Added docmc_savemap.bat to save current map to map repository.
+
+Bugfixes
+Removed kick user in docmc_whitelist_add.bat
+
+v1.0
 25.07.2017
 Added docmc_launch.bat batch file to launch ec2 instance using dos_ctrl_ec2 and run map.
 Added docmc_terminate.bat batch file to save map and terminate instance.
