@@ -1,3 +1,7 @@
+v1.1.1
+Fixed two cases of wrong map_id variable name in docmc_rendermap.bat.
+
+
 v1.1
 21.12.2017
 Features

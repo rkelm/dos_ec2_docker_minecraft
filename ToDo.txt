@@ -1,42 +1,13 @@
-TEST!
-  - Build
-  - setup with Links
-  - commit
-
-* dos_ctrl_ec2
-		- Find volume by tag
-		- Instantiate volume from snapshot
-			- chose snapshot by ID or Tag
-			- volume definition overrides snapshopt definition
-        - Optionally delete created volume after termination, if created by snapshot.
-	    - Optionally create snapshot before deleting volume.
-		   - Zero volume with "zerofree" before taking a snapshot.
-
 * Add batch & bash script to backup chosen map to s3 Bucket.
 	- First save map.
+	- Update AWS IAM Role to include backup bucket.
 	- Then copy with timestamped name to backup bucket, if configured.
+	- Ask user for optional comment tag value.
 	- Add to setup_links.bat
 	- Add to build file list.
 
-* Should control files be 
-
 * put client files to github
 	- readme.md with client Docs
-
-* put server files to github.
-	- add to build package
-	- add setup_server.sh	
-
-* Copy dockerfile/build.sh from docker_bakery_1 to github repos
-	- Warning: Not to be uploaded to docker hub.
-	- overviewer Dockerfile build.sh
-		- Clean up before build. 
-		- Support new MC Versions.
-
-* Create vagrantfile for docker bakery. Or does a better one already exist?
-* Put vagrant file to github 
-
-* Setup cron job with reminder Mail, that server is running.
 
 * Are dos_ec2_docker_minecraft/server/* files still needed? Most likely not.
 
@@ -44,7 +15,7 @@ TEST!
 	- s3 tags
 	- client/server setup_server
 
-* Map Management for clients
+* Implement Map Management for clients
 * list_maps.sh
 	- create docmc_list_maps.sh
 		aws s3api --region %REGION% list-objects-v2 --bucket %BUCKET% --prefix %MAPS_S3_KEY%
@@ -60,7 +31,8 @@ TEST!
 	- comment_map.sh <map_id> <comment>
 	- ?? snap_map.sh <map_id> [comment] - Old version gets comment
 	- keep_version.sh <map_id> <version_id> - Sets KEEP Tag = true
-	- create_map.sh <map_id> <url> - Wie genau kann eine neue Karte erstellt werden? Mit 			app-config-templates?
+	- convert bukkit-spigot world dirs to vanilla and vice versa.
+	- create_map.sh <map_id> <url> - Wie genau kann eine neue Karte erstellt werden? Mit app-config-templates? Besser client-seitig?
 	- Templates zum leichten erstellen von Maps.
 
 * Deploy a few maps for vanilla MC.

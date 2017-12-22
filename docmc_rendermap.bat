@@ -108,7 +108,7 @@ IF NOT DEFINED _map_id (
 	EXIT /B 0
 )
 
-ECHO Erzeuge Uebersicht fuer Minecraft Karte %map_id% 
+ECHO Erzeuge Uebersicht fuer Minecraft Karte %_map_id% 
 
 SET _BATCH_RENDER_JOB_NAME=%BATCH_RENDER_JOB_NAME%_%_map_id%
 
@@ -125,7 +125,7 @@ IF NOT ERRORLEVEL 1 (
 	ECHO Batch Job Erstellung fehlgeschlagen.
 )
 
-ECHO Aktualisierung der Karte %map_id% gestartet. Das kann bis zu 30 Minuten dauern.
+ECHO Aktualisierung der Karte %_map_id% gestartet. Das kann bis zu 30 Minuten dauern.
 ECHO Das Ergebnis kann spaeter unter %URL_MAP_OVERVIEW% eingesehen werden.
 
 PAUSE
