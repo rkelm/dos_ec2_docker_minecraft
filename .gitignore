@@ -1,0 +1,6 @@
+*.lnk
+/config/docmc_config_mcd1.bat
+/config/docmc_config_testd1.bat
+job_id.txt
+map_ids.txt
+/build/*.zip

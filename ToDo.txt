@@ -1,11 +1,3 @@
-* Add batch & bash script to backup chosen map to s3 Bucket.
-	- First save map.
-	- Update AWS IAM Role to include backup bucket.
-	- Then copy with timestamped name to backup bucket, if configured.
-	- Ask user for optional comment tag value.
-	- Add to setup_links.bat
-	- Add to build file list.
-
 * put client files to github
 	- readme.md with client Docs
 

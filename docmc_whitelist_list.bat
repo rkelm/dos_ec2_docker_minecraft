@@ -26,6 +26,6 @@ REM Load configuration variables.
 CALL %CONFIGFILE% %_CONFIG%
 
 ECHO Rufe Whitelist des Minecraft Servers ab.
-CALL %CTRL_PATH%ec2_send_command.bat %_CONFIG% sudo -u ec2-user %SRV_INSTALL_PATH%/bin/app_cmd.sh 'whitelist list'
+CALL %CTRL_PATH%ec2_send_command.bat %_CONFIG% sudo -u ec2-user %SRV_INSTALL_PATH%bin/app_cmd.sh 'whitelist list'
  
 PAUSE
